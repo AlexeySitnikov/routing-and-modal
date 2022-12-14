@@ -1,9 +1,7 @@
 export function Button({ title }) {
   return (
-    <button type="button" className="btn btn-primary">
-      `$
-      {title}
-      `
-    </button>
+    <div className="container">
+      <button type="button" className="my-2 btn btn-primary">{title}</button>
+    </div>
   )
 }
