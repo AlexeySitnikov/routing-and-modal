@@ -1,10 +1,10 @@
-import { Button } from "./Button";
+import { Button } from './Button'
 
-export function Main(){
+export function Main() {
   return (
     <>
-    <Button title={'Goto children_1'} />
-    <Button title={'Goto children_2'} />
+      <Button title="Goto children_1" />
+      <Button title="Goto children_2" />
     </>
   )
 }

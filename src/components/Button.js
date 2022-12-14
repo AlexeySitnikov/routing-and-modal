@@ -1,5 +1,9 @@
-export function Button({title}){
+export function Button({ title }) {
   return (
-<button type="button" class="btn btn-primary">`${title}`</button>
+    <button type="button" className="btn btn-primary">
+      `$
+      {title}
+      `
+    </button>
   )
 }
