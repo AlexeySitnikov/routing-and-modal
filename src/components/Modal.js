@@ -1,10 +1,14 @@
+/* eslint-disable no-unused-vars */
+import { useState } from 'react'
 import { Button } from './Button'
+import styles from './modal.module.css'
 
-export function Modal() {
+export function Modal({ isOpen, children }) {
   return (
-    <>
-      <h1>Modal</h1>
-      <Button title="Close modal" />
-    </>
+    <div className={isOpen ? `${styles.modal} ${styles.active}` : `${styles.modal}`}>
+      <div className={isOpen ? `${styles.modal__content} ${styles.active}` : `${styles.modal__content}`}>
+        {children}
+      </div>
+    </div>
   )
 }
